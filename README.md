@@ -1,7 +1,7 @@
 # amf-bug-securedby
 
-This repository contains a simple example which demonstrates a bug in the AMF parser which produces an invalid OAS3 file
-when converting a RAML file which is referencing a security scheme in a library via securedBy.  Run the test 'RamlToOasConversionTest'
+This repository contains a simple example which demonstrates a problem with the AMF parser which produces an invalid OAS3 file
+when converting a RAML file which is referencing a security scheme in a library using securedBy.  Run the test 'RamlToOasConversionTest'
 and it will fail.  The test converts a RAML 1.0 API file to OAS3.0 and then validates the generated OAS3 API file.  The OAS3 file 
 will be written to the directory 'src/test/resources/demo-api/'.  The OAS3 file will be invalid:
 
