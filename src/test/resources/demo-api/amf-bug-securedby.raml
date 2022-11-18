@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: amf-bug-securedby
+version: 1.0
+description: An API to demonstrate a bug in the AMF parser when converting an API from RAML to OAS
+
+uses:
+  lib: raml-library.raml
+
+types:
+  Account:
+    type: object
+    properties:
+      accountName:
+        type: string
+
+/accounts:
+  get:
+    securedBy:
+      - lib.basic
+    responses:
+      200:
+        body:
+          application/json:
+            type: Account
