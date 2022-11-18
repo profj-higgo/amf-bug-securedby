@@ -15,9 +15,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.concurrent.ExecutionException;
 
+/**
+ * A test to show that the conversion from RAML to OAS produces
+ * an invalid OAS file.
+ */
 @Slf4j
 public class RamlToOasConversionTest {
     private String OAS3_OUTPUT_FILE_NAME = "api.json";
+
     @Test
     public void ramlToOasConversionShouldProduceValidOasFile() throws ExecutionException, InterruptedException, IOException {
         Path pathToRamlFile = given_a_raml_1_api_referencing_a_security_scheme_in_library();

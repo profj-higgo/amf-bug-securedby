@@ -30,3 +30,5 @@ The generated output OAS3 file is missing the following securitySchemes componen
 "scheme": "basic"
 }
 ```
+
+The test RamlValidationTest shows that the RAML file is valid.
